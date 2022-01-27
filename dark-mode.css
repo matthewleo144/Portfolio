@@ -1,0 +1,193 @@
+:root {
+    --bs-primary:rgb(18, 100, 199);
+    --bs-secondary: #fca821;
+    --bs-success: #198754;
+    --bs-warning: #ffc107;
+    --bs-light: #f8f9fa;
+    --bs-softwhite: #dcdcdc;
+    --bs-dark: rgb(58, 59, 60);
+    --bs-button:rgb(244, 143, 177);
+    --bs-secoundary-tech:rgb(47, 48, 52);
+    --bs-secondary-white:rgb(240, 240, 240);
+    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+.dark-mode{
+    background-color: var(--bs-dark);
+}
+.dark-mode .header{
+    background-color: #222324;
+}
+.dark-mode .site-nav-scroll .nav-link{
+    color: var(--bs-light) !important;
+}
+.dark-mode .nav-link.current-section{
+    border: 2px solid var(--bs-secondary);
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+    background-color: var(--bs-secondary);
+}
+.dark-mode .site-nav-scroll .nav-link.current-section{
+    border: 2px solid none;
+    background-color: var(--bs-secondary);
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+.dark-mode p{
+    color: var(--bs-light);
+}
+
+/* Home */
+.dark-mode .header-area h3{
+    color: var(--bs-light);
+    font-weight: bolder;
+}
+/* Skill */
+.dark-mode .skill{
+    /* background-image: url("../images/bg-3.svg"); */
+    color: var(--bs-light);
+}
+.dark-mode .progress-bar {
+    animation-name: animationProgress;
+    animation-duration: 2s;
+    background-color: var(--bs-warning);
+  }
+
+/* NavBar */
+.dark-mode .nav__link {
+    display: flex;
+    align-items: center;
+    color: var(--bs-softwhite);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 22px;;
+    background: transform 0.2s;
+}
+.dark-mode .nav__link--active {
+    color: var(--bs-softwhite);
+}
+.dark-mode .nav__link--active {
+    background: var(--bs-secondary);
+    text-decoration: none;
+    color: var(--bs-softwhite);
+}
+
+/* Side navbar */
+.dark-mode .nav__links {
+    position: fixed;
+    top: -10px;
+    right: -1px;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background: var(--bs-dark);
+    transform: translateX(250px);
+    transition: transform 0.2s;
+}
+.dark-mode .nav--open .nav__links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.dark-mode .nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+/* Projects */
+.dark-mode .number{
+    position: relative;
+    right: -55px;
+    top: 11px;
+    color: var(--bs-light);
+    background: var(--bs-warning);
+    padding: 1px;
+    border-radius: 50%;
+    width: 25px;
+}
+.dark-mode .btn-d{
+    border: 2px solid var(--bs-secondary);
+}
+
+/* Text */
+.dark-mode .mode-text{
+    color: var(--bs-light);
+}
+.dark-mode .mode-text2{
+    color: var(--bs-gray-tech);
+}
+.dark-mode .mode-text3{
+    color: var(--bs-softwhite);
+}
+.dark-mode .mode-text5{
+    color: var(--bs-secondary);
+}
+
+/* Background */
+.dark-mode .mode-bg1{
+    background-color: var(--bs-light);
+}
+.dark-mode .mode-bg{
+    background-color: var(--bs-button);
+}
+.dark-mode .mode-bg2{
+    background-color: var(--bs-warning);
+}
+.dark-mode .mode-bg3{
+    background-color: var(--bs-secoundary-tech);
+}
+.dark-mode .mode-bg4{
+    background-color: var(--bs-secondary-white);
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .dark-mode .number{
+            position: relative;
+            right: 0px;
+            top: 11px;
+            color: var(--bs-light);
+            background: var(--bs-warning);
+            padding: 1px;
+            border-radius: 50%;
+            width: 16px;
+        }
+}
+@media screen and (max-width: 780px) {
+    .dark-mode .site-nav .nav-link{
+        color: var(--bs-light) !important;
+        padding: 15px 20px;
+        border-radius: 10em;
+        margin-bottom: 5px;
+        box-shadow: 0 0 5px #00000015;
+    }
+    .dark-mode .site-nav .menu-icon{
+        color: var(--bs-secondary) !important;
+    }
+}
+.dark-mode .hambuger{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(208, 255, 0);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+/* .dark-mode .loader-container{
+    background-color: rgb(41, 37, 37);
+} */
+
+
+input:active{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+
+
+.neon-mode *{
+    font-family: 'Tomorrow', sans-serif;
+    cursor: pointer;
+}
+
+:root {
+    --bs-blue: #022b69;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #40ff00;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-neon: #343a40;
+    --bs-primary: #100e17;
+    --bs-info: rgba(255, 255, 255, 0.75);
+    --bs-danger: #dc3545;
+    --bs-secondary: #fca821;
+    --bs-success: #198754;
+    --bs-warning: #ffc107;
+    --bs-light: #f8f9fa;
+    --bs-softwhite: #dcdcdc;
+    --bs-neon: #1e1e25;
+    --bs-button:rgb(244, 143, 177);
+    --bs-secoundary-neon:rgb(47, 48, 52);
+    --bs-secondary-white:rgb(240, 240, 240);
+    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+.neon-mode{
+    background: var(--bs-primary);
+}
+.neon-mode .header{
+    background-color: rgb(49 42 63);
+}
+.neon-mode p{
+    color: var(--bs-light);
+}
+.neon-mode .choose-btn{
+    background-color: rgb(14 56 126 / 56%);
+    border: 4px solid #00f8ff;
+    color: var(--bs-yellow);
+    font-weight: bold;
+}
+.neon-mode .neon-text{
+    font-weight: bolder;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:rgb(50, 171, 205);
+}
+.neon-mode .header-area h3{
+    color: var(--bs-light);
+    font-weight: bolder;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:rgb(50, 171, 205);
+}
+
+/* nav-bar */
+.neon-mode .nav__link--active {
+    color: var(--bs-softwhite);
+}
+.neon-mode .nav__link--active, {
+    background: var(--bs-secondary);
+    text-decoration: none;
+    color: var(--bs-softwhite);
+}
+.neon-mode .nav--open .nav__links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+.neon-mode .nav__link {
+    display: flex;
+    top: -5px;
+    right: -1px;
+    z-index: 2;
+    align-items: center;
+    color: var(--bs-softwhite);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 22px;;
+    background: transform 0.2s;
+}
+.neon-mode .nav__link > i {
+    margin-right: 15px;
+}
+.neon-mode .nav__link--active {
+    color: var(--bs-secoundary-neon);
+}
+.neon-mode .nav-link.current-section{
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+    background: #00ffe157;;
+    border: 2px solid yellow;
+}
+.neon-mode .dropdown-menu{
+    background: #11b1d53d;
+    color: var(--bs-secondary);
+    border: 2px solid snow;
+    position: absolute;
+    right: 60px;
+}
+.neon-mode .dropdown-item:hover{
+    background: rgb(215,0,0);
+    background: linear-gradient(180deg, rgba(215,0,0,0.6001751042213761) 0%, rgba(0,255,243,0.6954131994594712) 100%);
+}
+
+
+/* side-nav */
+.neon-mode .nav__links {
+    position: fixed;
+    top: -10px;
+    right: -1px;
+    z-index: 0;
+    height: 100vh;
+    width: 250px;
+    background: var(--bs-neon);
+    transform: translateX(250px);
+    transition: transform 0.2s;
+}
+.neon-mode .side-nav{
+    z-index: 1;
+}
+.neon-mode .site-nav-scroll .nav-link{
+    color: var(--bs-light) !important;
+}
+.neon-mode .site-nav-scroll .nav-link.current-section{
+    background: #00ffe157;;
+    border: 4px solid yellow;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+.neon-mode .nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* mode */
+.neon-mode .mode-text{
+    color: var(--bs-light);
+}
+.neon-mode .mode-text2{
+    color: var(--bs-softwhite);
+}
+.neon-mode .mode-text3{
+    color: var(--bs-softwhite);
+}
+.neon-mode .mode-text5{
+    color: var(--bs-secondary);
+}
+.neon-mode .mode-text6{
+    color: var(--bs-white);
+}
+.neon-mode .mode-bg1{
+    background-color: var(--bs-light);
+}
+.neon-mode .mode-bg{
+    background-color: var(--bs-button);
+}
+.neon-mode .mode-bg2{
+    background-color: var(--bs-warning);
+}
+.neon-mode .mode-bg3{
+    background-color: var(--bs-secoundary-neon);
+}
+.neon-mode .mode-bg4{
+    background-color: var(--bs-secondary-white);
+}
+.neon-mode .neon-mode-bg{
+    background-color: rgb(23 162 184 / 32%);
+    border: 2px solid rgb(255 193 7);
+}
+.neon-mode .neon-bg {
+    background-color: rgb(61 8 90 / 73%);
+    border: 2px solid yellow;
+}
+
+/* button */
+.neon-mode .neon-btn{
+    border: 4px solid #ddff00;
+    background: rgba(37, 12, 174, 0.367);
+}
+.neon-mode .neon-btn:hover{
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.367);
+}
+.neon-mode .choose-btn:hover{
+    background: #58b121;
+    color: #f7fff4;
+}
+.neon-mode .btn-dl{
+    background-color: rgb(0 123 255 / 50%);
+    border: 4px solid #55ff00;
+}
+.neon-mode .btn-d{
+    background-color: #00006fa1;
+    border: 4px solid rgb(101, 198, 220);
+}
+/* ProgressBars */
+.neon-mode .progress-bar {
+    animation-name: animationProgress;
+    animation-duration: 2s;
+    background-color: var(--bs-warning);
+  }
+.neon-mode #scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.neon-mode #progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+.neon-mode #progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+.neon-mode #progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .neon-mode .number{
+            position: relative;
+            right: 0px;
+            top: 11px;
+            color: var(--bs-light);
+            background: var(--bs-warning);
+            padding: 1px;
+            border-radius: 50%;
+            width: 16px;
+        }
+        .neon-mode .btn-d{
+            font-size: 16px;
+        }
+    .neon-mode  .section-video{
+        position: relative;
+        top: -41px;
+        width: 146.5%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .neon-mode .site-nav .nav-link{
+        color: var(--bs-light) !important;
+        padding: 15px 20px;
+        border-radius: 10em;
+        margin-bottom: 5px;
+        box-shadow: 0 0 5px #00000015;
+    }
+    .neon-mode .site-nav .menu-icon{
+        color: var(--bs-secondary) !important;
+    }
+
+}
+
+
+
+/* Up-icon */
+.neon-mode .scroll-up{
+    background: rgba(6, 6, 162, 0.401);
+    backdrop-filter: blur(5px);
+    border: 5px solid rgb(150, 255, 0);
+}
+.neon-mode .up-icon{
+    filter: invert(1);
+}
+
+
+
+
+/* Home */
+.neon-mode #myVideo-home {
+    position: relative;
+    right: 79%;
+    bottom:6.3%;
+    width: 290%;
+    height: 110%;
+  }
+.neon-mode  .section-video {
+    display: block;
+    position: absolute;
+    top: -23%;
+    bottom: 0px;
+    left: -48.5%;
+    right: 0%;
+    height: 170%;
+    overflow: hidden;
+    width: 148.5%;
+    z-index: -1;
+  }
+/* About */
+.neon-mode .about{
+    background: url(/pic/bg/PNG/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+}
+/* Skill */
+.neon-mode #skill{
+    background: url(/pic/bg/PNG/skill_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+/* Project */
+.neon-mode .project{
+    background: url(/pic/bg/PNG/project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.neon-mode .services-card{
+    background-color: rgb(167 11 255 / 25%);
+    border: 4px solid rgb(255, 225, 0);
+}
+.neon-mode .hver-text{
+    color: var(--bs-warning);
+}
+
+/* Contact */
+.neon-mode .contact{
+    background: url(/pic/bg/PNG/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+}
+.neon-mode .contact-css{
+    background: #b9b9b9;
+    border-radius: 8px;
+}
+.neon-mode textarea.form-control {
+    background: #00000061;
+    height: auto;
+}
+.neon-mode .form-control {
+    background: #00000061;
+    height: auto;
+    border: 2px solid yellow;
+}
+.neon-mode .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neon-mode .slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: transparent;
+    border: 3px solid var(--bs-secondary);
+    border-radius: 50%;
+}
+.neon-mode .slick-dots li.slick-active{
+    width: 15px !important;
+    height: 15px !important;
+    background-color: var(--bs-light) !important;
+}
+.neon-mode .hambuger{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(208, 255, 0);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+/* .neon-mode .loader-container{
+    background-color: rgb(42, 40, 66);
+} */
+
+.neon-mode .input-text{
+    color: violet;
+}
+
+
+
+
