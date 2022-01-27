@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/vendor/animate_it/animate.css">
+<link rel="stylesheet" href="/css/font-awesome.css">
+<link rel="stylesheet" href="/ui ux projects/ui-ux.css">
+</head>
+<body>
+
+        <div class="slideshow-container">
+            <a href="/ui ux designs.html">
+                <button class="btn">
+                    <i class="text-white fa fa-times"></i>
+                </button>
+            </a>
+            <div class="mySlides text-center justify-content-center">
+                    <img src="/ui ux projects/5/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img src="/ui ux projects/5/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img src="/ui ux projects/5/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img src="/ui ux projects/5/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img src="/ui ux projects/5/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img src="/ui ux projects/5/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <br>
+
+        <div style="text-align:center" class="slide-dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+</script>
+
+</body>
+</html> 
