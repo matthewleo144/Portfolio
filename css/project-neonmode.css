@@ -32,9 +32,6 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
-.neon-mode{
-    background-color: black;
-}
 .neon-mode .header{
     color: var(--bs-cyan);
 }
@@ -180,6 +177,7 @@
     bottom:9%;
     width: 290%;
     height: 118%;
+    background: var(--bs-primary);
   }
 .neon-mode  .section-video {
     position: absolute;
