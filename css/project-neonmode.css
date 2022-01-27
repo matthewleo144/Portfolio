@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+
+
+.neon-mode *{
+    cursor: pointer;
+    font-family: 'Tomorrow', sans-serif;
+
+}
+:root {
+    --bs-blue: #022b69;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-neon: #343a40;
+    --bs-primary: #100e17;
+    --bs-secondary: #fca821;
+    --bs-success: #198754;
+    --bs-info: rgba(255, 255, 255, 0.75);
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-neon: #1e1e25;
+    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+
+.neon-mode .header{
+    color: var(--bs-cyan);
+}
+.neon-mode .services-card{
+    border-radius: 35px !important;
+    border: none;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.05) !important;
+    backdrop-filter: blur(50px);
+    transition: 0.5s;
+    background-color: rgb(167 11 255 / 25%);
+    border: 4px solid rgb(255, 225, 0);
+}
+}
+.neon-mode .services-card:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15) !important;
+    transform: scale(0.98);
+}
+.neon-mode .services-card img{
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+.neon-mode .services-card:hover .t{
+    opacity: 1;
+}
+.neon-mode .service-card-des{
+    height: 180px;
+}
+
+.neon-mode .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neon-mode .slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: transparent;
+    border: 3px solid var(--bs-secondary);
+    border-radius: 50%;
+}
+.neon-mode .slick-dots li.slick-active{
+    width: 15px !important;
+    height: 15px !important;
+    background-color: var(--bs-light) !important;
+}
+.neon-mode .text-neon{
+    color: rgb(0, 255, 247);
+}
+.neon-mode .btnn{
+    position: relative;
+    top: -450px;
+    border-radius: 10px;
+    color: white;
+    background-color: #00006fa1;
+    border: 5px solid #0dffe4;
+    transition: 0.5s;
+}
+
+.ani-delay-1{
+    animation-delay: 0.5s;
+}
+.ani-delay-2{
+    animation-delay: 1s;
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+}
+.ani-delay-4{
+    animation-delay: 2s;
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+}
+.ani-delay-6{
+    animation-delay: 3s;
+}
+.neon-mode .status-card{
+    border-radius: 35px !important;
+    border: none;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.05) !important;
+    transition: 0.5s;
+}
+.neon-mode .status-card:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15) !important;
+    transform: scale(0.98);
+}
+.neon-mode .image{
+    position: relative;
+    width: 100%;
+}
+
+.neon-mode .image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 5%;
+}
+.neon-mode .image-overlay:hover{
+    opacity: 1;
+}
+.neon-mode .image-overlay > * {
+    transform: translateY(20px);
+    transition: 0.25s;
+}
+.neon-mode .image-overlay:hover > * {
+    transform: translateY(0);
+}
+.neon-mode .image-overlay--blur{
+    backdrop-filter: blur(0.8px);
+}
+@media screen and(max-width:574px) {
+    .neon-mode .header{
+        position: relative;
+        top: 100px;
+    }
+}
+.neon-mode .btn-d{
+    background-color: #00006fa1;
+    border: 4px solid rgb(101, 198, 220);
+}
+
+
+.neon-mode .section-video{
+    display: block;
+}
+
+
+.neon-mode #myVideo-home {
+    position: relative;
+    right: 78.7%;
+    bottom:9%;
+    width: 290%;
+    height: 118%;
+  }
+.neon-mode  .section-video {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -48.5%;
+    right: 0%;
+    min-height: 100%;
+    height: 0%;
+    min-width: 102%;
+    overflow: hidden;
+  }
+.neon-mode .neon-text{
+    color: var(--bs-yellow);
+}
