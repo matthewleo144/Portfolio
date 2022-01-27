@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI/UX Designs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student Project for SWD 6"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/pic/m-logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="/css/projects.css">  
+    <link rel="stylesheet" href="/css/project-darkmode.css">
+    <link rel="stylesheet" href="/css/project-neonmode.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <style>
+            .loader-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(0, 0, 0);
+                    height: 100vh;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 2000;
+                }
+                .loader,
+            .loader:before,
+            .loader:after {
+            background: #670d0d;
+            -webkit-animation: load1 1s infinite ease-in-out;
+            animation: load1 1s infinite ease-in-out;
+            width: 1em;
+            height: 4em;
+            }
+            .loader {
+            color: #670d0d;
+            text-indent: -9999em;
+            margin: 88px auto;
+            position: relative;
+            font-size: 15px;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            }
+            .loader:before,
+            .loader:after {
+            position: absolute;
+            top: 0;
+            content: '';
+            }
+            .loader:before {
+            left: -1.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            }
+            .loader:after {
+            left: 1.5em;
+            }
+            @-webkit-keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+            }
+            @keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+            }
+            p{
+                overflow: hidden;
+            }
+            .imgg{
+                display: block;
+                height: 180px;
+            }
+            
+            .xx{
+                position: relative;
+                top: 140px;
+            }
+    </style>
+  </head>
+  <body class="vh-100 m-0">
+    <div class="loader-container" style="z-index: 2000;">
+        <div class="loader">Loading...</div>
+    </div>
+    <section class="section-video vh-100">
+        <video autoplay muted loop id="myVideo-home" loop="" muted="">
+            <source src="/bg/ui ux.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section id="project" class="mother-container container-fluid vh-100">
+        <div class="row py-5">
+            <section class="container">
+                <h1 class="text-center header" style="position: relative;top: 100px;">UI/UX</h1>
+                <div class="row pricing-slide animated xx slideInLeft">
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 1</h4>
+                                <div class="image">
+                                    <img src="/ui ux projects/1/mockup1.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 2</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/2/mockup2.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 3</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/3/mockup3.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 4</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/4/mockup4.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 5</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/5/mockup5.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 6</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/6/mockup6.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 7</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/7/mockup7.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 8</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/8/mockup8.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h4 class= "font-weight-bolder text-neon text-uppercase">Project 9</h4>
+                                
+                                <div class="image">
+                                    <img src="/ui ux projects/9/mockup9.jpg" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <a onclick="showslider()">
+                                        <button class="btn btn-d">
+                                            <div class="image-title neon-text">See Details</div>
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <a href="/index.html#project">
+            <button class="btnn" style="width: 100px;height: 50px;font-size: 20px;">
+                Back
+            </button>
+        </a>
+    </section>
+
+
+    <div class="show vh-100 w-100"  style="position: relative;
+    top: -100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/1/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/1/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/1/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/1/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/1/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/1/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <!-- <div class="show2 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="neon-text fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/2/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/2/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/2/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/2/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/2/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/2/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show3 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/3/3.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/3/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/3/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/3/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/3/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/3/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show4 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/4/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/4/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/4/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/4/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/4/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/4/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show5 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/5/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/5/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/5/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/5/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/5/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/5/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show6 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/6/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/6/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/6/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/6/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/6/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/6/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show7 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/7/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/7/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/7/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/7/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/7/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/7/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show8 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/8/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/8/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/8/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/8/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/8/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/8/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+    <div class="show9 vh-100 w-100 d-none"  style="position: relative;
+    top: -100vh;width: 100vh; background-color: rgba(0, 0, 0, 0.578); backdrop-filter: blur(5px);">
+        <button class="btn-cancel">
+                <i class="text-white fa fa-times"></i>
+        </button>
+
+        <div class="slideshow-container">
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/9/1.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center ">
+                <img class="img1" src="/ui ux projects/9/2.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/9/3.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                    <img class="img1" src="/ui ux projects/9/4.jpg" >
+            </div>
+            <div class="mySlides text-center justify-content-center">
+                <img class="img1" src="/ui ux projects/9/5.jpg">
+            </div>
+            <div class="mySlides text-center justify-content-center">
+            <img class="img1" src="/ui ux projects/9/6.jpg">
+            </div>
+            <a class="prev text-light" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next text-light" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        </div>
+        <div style="text-align:center" class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="vendor/slick/slick.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="/js/slides.js"></script>
+    <script>
+        function dark() {
+            document.querySelector('body').classList.add('dark-mode');
+            document.querySelector('body').classList.remove('neon-mode');
+            localStorage.setItem("data-theme", "dark");
+        }
+        function neon() {
+            document.querySelector('body').classList.add('neon-mode');
+            document.querySelector('body').classList.remove('dark-mode');
+            localStorage.setItem("data-theme", "neon");
+        }
+               
+                window.onload= function() {
+                    let theme_flag=localStorage.getItem("data-theme");
+                    if(theme_flag=="dark"){
+                        dark();
+                    }else if(theme_flag == "neon"){
+                        neon();
+                    }
+                }
+    </script>
+  </body>
+</html>
