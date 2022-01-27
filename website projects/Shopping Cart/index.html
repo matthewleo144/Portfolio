@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AutoComplete</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/13ac3f9e25.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="autoCompleteArea">
+                <h2>Autocomplete Area</h2>
+                <input type="email" class="form-control productNames" id="exampleInputEmail1" placeholder="Search products...">
+                <!-- <i class="fas fa-search-plus" aria-hidden="true"></i> -->
+                <div class="resultContainer"></div>
+                <div class="enteredImgContainer displayNone">
+                    <div>
+                      <span class="title name">Item Type-</span>
+                      <span class="dollar">Price-$</span>
+                      <span class="price"></span>
+                    </div>
+                    <img class="enteredImg">
+                    <p class="description"></p>
+                  </div>
+            </div>
+            <button><i class="fas fa-retweet refresh" aria-hidden="true"></i></button>
+            <div class="selectedProductArea">
+                <h3>Your Selected Items</h3>
+            </div>
+        </div>
+        <div class="buy">Your item will be delivered within 3 days!!! </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/474c678246.js" crossorigin="anonymous"></script>
+    <title>To do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="bgimg">
+        <div class="boxx">
+            <div class="mid">
+                <h1 class="fs">To do list </h1>
+                <div class="todo">
+                    <div class="add-box">
+                        <input type="text" id="input" placeholder="Say Somthing...." class="INPUTBOX">
+                        <i id="addbtn" onclick="addlist()" class="fas fa-plus-circle btn btn-add control"></i>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <ul class="list" id="list">
+        </ul>
+    </div>
+    
+    <script>
+        let minTextLength = 3;
+        let i = 1;
+        let input = document.getElementById("input");
+        let list =  document.getElementById("list");
+
+        function textFilter(x){
+            if(x){
+            if(x.length >= minTextLength){
+                return x; 
+            }
+            else{ alert("Min text should be three vobs")
+                return false;
+            }
+
+            }else{ alert("Input Text is Empty")
+                return false;
+            }
+            }
+            
+        function showlistBackup(text){
+            list.innerHTML += `
+            <li class="list-Item container add-box animate__animated animate__fadeInDown" id="list${i}">
+                <div id="listText${i}" class="text">${text}</div>
+                <div class="controls">
+                    <button class="ho1"><i class="fas fa-edit con1" onclick="editlist(${i})"></i></button>
+                    <button class="ho2"><i class="fas fa-window-close con2" onclick="deletelist(${i})"></i></button>
+                </div>
+            </li>`;
+            i++;
+        }
+        function showlist(text){
+            let li = document.createElement("li");
+            let content = document.createTextNode(text);
+            li.appendChild(content);
+            li.classList="animate__animated animate__fadeInDown";
+            list.appendChild(li)
+        }
+
+        function deletelist(listId){
+            let current = document.getElementById(`list${listId}`);
+            let currentText = document.getElementById(`listText${listId}`).innerHTML;
+            let deleteconfirm = confirm(`Are you sure you want to delete '${currentText}'`);
+            if(deleteconfirm){
+            list.removeChild(current);
+            }else{
+                console.log("Delete Cancel")
+            }
+        }
+
+        function editlist(listId){
+            let current = document.getElementById(`listText${listId}`);
+            let newText = prompt("Say Somthing", current.innerHTML);
+            if(textFilter(newText)){
+                current.innerHTML= newText;
+            }
+            current.innerHTML = textFilter(newText);
+        }
+
+        function addlist() {
+            let inputText = textFilter(input.value);
+            if(inputText){
+                showlist(inputText);
+                input.value ="";
+            }
+        }
+
+    </script>
+</body>
+</html>

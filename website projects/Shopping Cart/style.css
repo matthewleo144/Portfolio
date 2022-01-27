@@ -1,0 +1,221 @@
+body{
+  user-select: none;
+  background-color: rgb(28, 20, 56);
+}
+h2{
+  font-size: 15px;
+  text-align: center;
+  background-color:rgb(201, 201, 201);
+  border-radius: 20px;
+  width: 100%;
+}
+h3{
+font-size: 15px;
+text-align: center;
+background-color:rgb(194, 194, 194);
+border-radius: 20px;
+width: 309px;
+}
+.container{
+  display: flex;
+  max-width:1000px;
+  margin-top: 100px;
+}
+.autoCompleteArea{
+  position: relative;
+  width: 165%;
+  display: inline;
+}
+.productNames{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+  font-size: small;
+}
+.resultContainer{
+  background-color: #ffffff;
+  position:absolute;
+  z-index: 1;
+}
+.productItemContainer {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  top: 10px;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #8d2e2e;
+  margin-top: 2px;
+}
+.productItemContainer:hover{
+  background-color: #d9ff00;
+  color: black;
+}
+.enteredProductContainer{
+height: 400px;
+background-color: lightgray;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.enteredProductImageTag{
+height: 60%;
+}
+.selectedProductArea{
+  position: relative;
+  left: 10%;
+  width: 117%;
+  height: auto;
+}
+
+.button{
+height: 40px;
+display: block;
+margin: 20px auto;
+cursor: pointer;
+}
+.buy{
+color: rgb(240, 106, 106);
+font-weight: bold;
+font-size: 50px;
+display: none;
+margin: 100px auto;
+text-align: center;
+}
+.far,fa-times-circle{
+cursor: pointer;
+font-size: 20px;
+}
+.far:hover,fa-times-circle:hover{
+  color: white;
+   background-color: #ff0000;
+   border-radius: 50%;
+  }
+
+.container {
+  margin-top: 100px;
+  max-width: 600px;
+}
+
+.autoCompleteInput {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.productName {
+  font-size: 12px;
+  width: 80%;
+}
+.productImage {
+  height: 80%;
+  position: relative;
+  left: -17px;
+  background-color: #8d2e2e;
+}
+.resultcontainer{
+  background-color: #fff;
+  }
+  
+.displayNone{
+  display: none;
+}
+.title{
+  width: 100%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 10px;
+}
+.enteredImgContainer{
+  display: block;
+  width: 424px;
+  right: 46%;
+}
+.enteredImg{
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  padding-top: 10px;
+  border-radius: 5%;
+  position: relative;
+  left: 202px;
+}
+.description{
+  display: block;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.price{
+  font-weight: bold;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(124,155,168,1) 63%, rgba(77,43,43,1) 100%);
+  border-radius: 5px;
+}
+.dollar{
+  font-family:serif;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(124,155,168,1) 17%, rgb(59, 52, 52) 100%);
+  border-radius: 5px;
+}
+.name{
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.fa-search-plus{
+  position: relative;
+}
+.autoCompleteArea input[type-text]{
+  padding-left: 100px;
+}
+.autoCompleteArea i{
+  position: absolute;
+  left: 372px;
+  top: 33px;
+  padding: 9px 8px;
+  color: #a0a0a0;
+  transition: .3s;
+}
+.autoCompleteArea i:hover{
+  color: #ff0000;
+}
+.autoCompleteArea input[type-text]:focus + .autoCompleteArea i{
+  color: rgb(133, 136, 139);
+}
+.btn{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgb(167, 142, 142) 0%, rgb(85, 84, 84) 50%, rgba(98,36,36,1) 100%);
+  border-style: none;
+}
+.btn:hover{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgb(65, 60, 60) 0%, rgb(228, 0, 0) 50%, rgb(255, 218, 6) 100%);
+  color: rgb(229, 255, 0);
+}
+button{
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    top: 28px;
+    border-radius: 50px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(255, 247, 247) 32%, rgb(255, 255, 255) 100%);
+}
+button:focus{
+  outline: none;}
+button:hover{
+    background: #c7c0c0;
+}
+/* @media screen and (max-width: 411px) {
+    .autoCompleteArea{
+      display: block;
+    }
+} */
