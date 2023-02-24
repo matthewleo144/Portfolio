@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+
+
+.neon-mode *{
+    cursor: pointer;
+    font-family: 'Tomorrow', sans-serif;
+
+}
+:root {
+    --bs-blue: #022b69;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-neon: #343a40;
+    --bs-primary: #100e17;
+    --bs-secondary: #fca821;
+    --bs-success: #198754;
+    --bs-info: rgba(255, 255, 255, 0.75);
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-neon: #1e1e25;
+    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+.neon-mode .header{
+    color: var(--bs-cyan);
+}
+/* .neon-mode h5, h3{
+    filter: drop-shadow(0 0 10px rgb(204, 113, 233));
+} */
+.neon-mode .services-card{
+    border: none;
+    backdrop-filter: blur(50px);
+    transition: 0.5s;
+    background-color: rgb(167 11 255 / 25%);
+
+    box-shadow: 0 0 10px #fff70000;
+}
+.neon-mode .col-12{
+    padding: 9px;
+}
+/* .neon-mode .services-card:hover{
+    box-shadow: 0 0 10px #fff70000 !important;
+    transform: scale(0.98);
+} */
+.neon-mode .services-card img{
+    transition: 0.5s;
+    width: 100%;
+    opacity: 0.9;
+}
+.neon-mode .services-card:hover .t{
+    opacity: 1;
+}
+.neon-mode .service-card-des{
+    height: 180px;
+}
+
+/* .neon-mode .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neon-mode .slick-dots li{
+    width: 20px !important;
+    height: 4px !important;
+    background-color: transparent;
+    border: 1px solid var(--bs-secondary);
+    filter: drop-shadow(0 0 2px #fff700);
+} */
+/* .neon-mode .slick-dots li.slick-active{
+    width: 20px !important;
+    height: 4px !important;
+    background-color: var(--bs-light) !important;
+} */
+.neon-mode .text-neon{
+    color: rgb(0, 255, 247);
+}
+.neon-mode .btnn{
+    position: relative;
+    border-radius: 10px;
+    color: white;
+    background-color: #00006fa1;
+    border: 5px solid #0dffe4;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px rgb(204, 113, 233));
+}
+.neon-mode .N-icon{
+    filter: drop-shadow(0 0 2px #fff700);
+}
+/* .ani-delay-1{
+    animation-delay: 0.5s;
+}
+.ani-delay-2{
+    animation-delay: 1s;
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+}
+.ani-delay-4{
+    animation-delay: 2s;
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+}
+.ani-delay-6{
+    animation-delay: 3s;
+} */
+.neon-mode .status-card{
+    border-radius: 35px !important;
+    border: none;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.05) !important;
+    transition: 0.5s;
+}
+.neon-mode .status-card:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15) !important;
+    transform: scale(0.98);
+}
+.neon-mode .image{
+    position: relative;
+    width: 100%;
+}
+
+@media screen and(max-width:574px) {
+    .neon-mode .header{
+        position: relative;
+        top: 100px;
+    }
+}
+.neon-mode .btn-d{
+    background-color: #00006fa1;
+    border: 2px solid rgb(101, 198, 220);
+    filter: drop-shadow(0 0 10px rgb(204, 113, 233));
+}
+.neon-mode .btn-d2{
+    background-color: #00006fa1;
+    border: 2px solid rgb(101, 198, 220);
+    filter: drop-shadow(0 0 10px rgb(204, 113, 233));
+}
+
+
+.neon-mode .section-video{
+    display: block;
+}
+
+.neon-mode #myVideo-home {
+    position: relative;
+    right: 78.7%;
+    bottom:9%;
+    width: 290%;
+    height: 118%;
+    background: var(--bs-primary);
+  }
+.neon-mode  .section-video {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -48.5%;
+    right: 0%;
+    min-height: 100%;
+    height: 0%;
+    min-width: 102%;
+    overflow: hidden;
+  }
+.neon-mode .neon-text{
+    color: var(--bs-yellow);
+}
+.neon-mode .neon-text2{
+    color: var(--bs-yellow);
+}
+.neon-mode .usage{
+    color: yellow;
+    font-size: 12px;
+    /* Created with https://www.css-gradient.com */
+background: #98B388;
+background: -webkit-radial-gradient(center, #98B388, #D646C3);
+background: -moz-radial-gradient(center, #98B388, #D646C3);
+background: radial-gradient(ellipse at center, #98B388, #D646C3);
+    padding: 5px;
+    border-radius: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* nav-bar */
+.neon-mode .nav__link--active {
+    color: var(--bs-softwhite);
+}
+.neon-mode .nav__link--active, {
+    background: var(--bs-secondary);
+    text-decoration: none;
+    color: var(--bs-softwhite);
+}
+.neon-mode .nav--open .nav__links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+.neon-mode .nav__link {
+    display: flex;
+    top: -5px;
+    right: -1px;
+    z-index: 2;
+    align-items: center;
+    color: var(--bs-softwhite);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 22px;;
+    background: transform 0.2s;
+}
+.neon-mode .nav__link > i {
+    margin-right: 15px;
+}
+.neon-mode .nav__link--active {
+    color: var(--bs-secoundary-neon);
+}
+.neon-mode .nav-link.current-section{
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+    background: #00ffe157;;
+    border: 2px solid yellow;
+}
+.neon-mode .dropdown-menu{
+    background: #11b1d53d;
+    color: var(--bs-secondary);
+    border: 2px solid snow;
+    position: absolute;
+    right: 60px;
+}
+.neon-mode .dropdown-item:hover{
+    background: rgb(215,0,0);
+    background: linear-gradient(180deg, rgba(215,0,0,0.6001751042213761) 0%, rgba(0,255,243,0.6954131994594712) 100%);
+}
+.neon-mode .mode-text{
+    color: var(--bs-light);
+}
+
+/* side-nav */
+.neon-mode .nav__links {
+    color: whitesmoke;
+    position: fixed;
+    top: -10px;
+    right: -1px;
+    z-index: 0;
+    height: 100vh;
+    width: 250px;
+    background: var(--bs-neon);
+    transform: translateX(250px);
+    transition: transform 0.2s;
+}
+.neon-mode .side-nav{
+    z-index: 1;
+}
+.neon-mode .site-nav-scroll .nav-link{
+    color: var(--bs-light) !important;
+}
+.neon-mode .site-nav-scroll .nav-link.current-section{
+    background: #00ffe157;;
+    border: 4px solid yellow;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+.neon-mode .nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+.neon-mode .current-active{
+    box-shadow: 0 0 10px #fff700;
+}

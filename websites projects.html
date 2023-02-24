@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Projects</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student Project for SWD 6"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/pic/m-logo.png" />
+    <style>
+       .loader-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(0, 0, 0);
+                    height: 100vh;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 2000;
+                }
+                .loader-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(0, 0, 0);
+                    height: 100vh;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 2000;
+                    
+                }
+            .loader {
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                position: relative;
+                }
+                .loader::after,
+                .loader::before {
+                content: '';  
+                box-sizing: border-box;
+                width: 48px;
+                height: 48px;
+                border: 2px solid #FFF;
+                position: absolute;
+                left: 0;
+                top: 0;
+                animation: rotationBreak 3s ease-in-out infinite alternate;
+                }
+                .loader::after {
+                border-color: #FF3D00;
+                animation-direction: alternate-reverse;
+                }
+
+                @keyframes rotationBreak {
+                0% {
+                    transform: rotate(0);
+                }
+                25% {
+                    transform: rotate(90deg);
+                }
+                50% {
+                    transform: rotate(180deg);
+                }
+                75% {
+                    transform: rotate(270deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+                }
+        p{
+            overflow: hidden;
+        }
+        .imgg{
+            display: block;
+            height: 180px;
+        }
+        .xx{
+            position: relative;
+            top: 140px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrapForproject.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/material-icons.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="/css/projects.css">  
+    <link rel="stylesheet" href="/css/project-darkmode.css">
+    <link rel="stylesheet" href="/css/project-neonmode.css">
+    <link rel="stylesheet" href="/css/circle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body class="vh-100 m-0">
+    <div class="loader-container" style="z-index: 2000;">
+        <div class="loader"></div>
+    </div>
+    <section class="section-video vh-100">
+        <video autoplay muted loop id="myVideo-home" loop="" muted="">
+            <source src="/bg/web.mp4" type="video/mp4">
+        </video>
+    </section>
+    <nav class="circle-nav animated tada ani-delay-1" style="    position: fixed;
+    bottom: -5em;
+    left: 0px;">
+        <div class="nav-content">
+            <div class="toggle-btnn">
+                <img src="/pic/skill icons/Theme-Icon.png " id="mode-icon1" class="imgtog animated tada N-icon" alt="">
+                <i class='bx bx-plus plusd d-none N-icon' id="mode-icon" style="color: yellow;"></i>
+            </div>
+            <span style="--i:5;">
+                <a " onclick="light()">
+                    <i class='bx bxs-sun N-icon' style="color: yellow;"></i>
+                </a>
+            </span>
+            <span style="--i:4;">
+                <a " onclick="dark()">
+                    <i class='bx bxs-moon N-icon' style="color: yellow;"></i>
+                </a>
+            </span>
+            <span style="--i:3;">
+                <a  onclick="neon()">
+                    <img src="/pic/skill icons/Neon.png" alt="" style="    width: 60px;
+                height: 60px; transform: rotate(135deg); border-radius: 100%; ">
+                </a>
+            </span>
+        </div>
+    </nav>
+    <a href="/index.html#project" style="    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    z-index: 1;">
+        <button class="btnn">
+            <i class='bx bxs-home' id="btn-home"></i>
+        </button>
+    </a>
+    <section id="project" class="mother-container container-fluid vh-100">
+        <div class="row pb-5 min-vh-100" style="align-items: center;">
+            <section class="container" style="    margin-top: -5em;">
+                <h3 class="justify-content-center text-center header font-weight-bolder N-icon-text" style="position: relative;top: 60px;">Website Projects</h3>
+                <div class="row pricing-slide animated xx bounceInUp">
+
+                    
+                    <div class="col-12 ">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Shopping Cart</h5>
+                                <div class="image">
+                                    <img src="/website projects/Shopping Cart/Cart.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag" style="align-items: center;">
+                                            <a href="https://github.com/matthewleo144/Shopping-Cart.git" target="..." >
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1); vertical-align: middle;" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="/website projects/Shopping Cart/Shopping Cart.html" target="..." onclick="showslider()" >
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text justify-content-center text-center ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1); vertical-align: middle;" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>
+                                        <span class="usage">jQuery</span>
+                                    </div>
+                                    <p class="image-title neon-text2">A shopping cart project is  created with jQuery. Product details from the fakestore api. </i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">IOS-Calculator</h5>
+                                <div class="image">
+                                    <img src="/website projects/IOS Calculator/Calculator.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag">
+                                            <a href="https://github.com/matthewleo144/IOS-Calculator/" target="...">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="/website projects/IOS Calculator/calc.html" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>
+                                        <span class="usage">Bootstrap4</span>
+                                    </div>
+                                    <p class="image-title neon-text2">This is a responsive IOS Calculator with pure Javascript.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Admin Dashboard</h5>
+                                <div class="image">
+                                    <img src="/website projects/Admin Dashboard/template.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag">
+                                            <a href="https://github.com/matthewleo144/Admin-Dashboard.git" target="..." >
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="/website projects/Admin Dashboard/dashboard.html" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>
+                                        <span class="usage">Bootstrap4</span>
+                                    </div>
+                                    <p class="image-title neon-text2">The Admin Dashboard project is created with feather css and data table of Bootstrap 4.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Marketing Website</h5>
+                                <div class="image">
+                                    <img src="/website projects/Marketing website/template.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">                                            
+                                            <div class="d-flex">
+                                                <a href="https://github.com/matthewleo144/Marketing-Website/tree/main" target="...">
+                                                    <button class="btn btn-d">
+                                                        <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                            <i class="far mt-2">
+                                                                <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                            </i>
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="https://naughty-mayer-d45a07.netlify.app/" target="..." onclick="showslider()">
+                                                    <button class="btn btn-d">
+                                                        <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                            <i class="far mt-2">
+                                                                <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                            </i>
+                                                        </div>
+                                                    </button>
+                                                </a> 
+                                            </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">SCSS</span>
+                                        <span class="usage">JS</span>
+                                        <span class="usage">Bootstap4</span>
+                                    </div>
+                                    <p class="image-title neon-text2">A simple marketing website for the business is created with SCSS, Bootstrap4.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Voucher App</h5>
+                                <div class="image">
+                                    <img src="/website projects/Voucher App/Voucher.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">                                        
+                                        <div class="d-flex">
+                                            <a href="https://github.com/matthewleo144/Voucher-App" target="...">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="https://matthew-leonardi-portfolio.netlify.app/website%20projects/voucher%20app/voucher%20app" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Bootstrap4</span>
+                                        <span class="usage">Javascript</span>                                          
+                                    </div>
+                                    <p class="image-title neon-text2">This is a simple way save your list and it will automatically count the total.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Digital Watch</h5>
+                                <div class="image">
+                                    <img src="/website projects/Digital Watch/template.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag">
+                                            <a href="https://github.com/matthewleo144/Digital-Watch" target="...">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="https://nervous-hermann-db1987.netlify.app/" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>
+                                        <span class="usage">Bootstrap4</span>
+                                    </div>
+                                    <p class="image-title neon-text2">The digital watch with millie seconds project. It was only used HTML, CSS, Bootstap & JS</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">Dice Game</h5>
+                                <div class="image">
+                                    <img src="/website projects/Dice Game/template.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag">
+                                            <a href="https://github.com/matthewleo144/Dice-Game-Project.git" target="...">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="https://genuine-kheer-ae0f63.netlify.app/" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>
+                                    </div>
+                                    <p class="image-title neon-text2">The game is to play the two opponents roll the dice until the limited number has reached.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>                                      
+                    <div class="col-12">
+                        <div class="card mb-5 services-card">
+                            <div class="card-body text-center">
+                                <h5 class= "font-weight-bolder text-neon text-uppercase">List</h5>
+                                <div class="image">
+                                    <img src="/website projects/List/template.png" class="imgg" alt="">
+                                    <div class="image-overlay image-overlay--blur">
+                                        <div class="d-flex Tocenteratag">
+                                            <a href="https://github.com/matthewleo144/To-Do-List" target="...">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon1"> Repository <br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Github.png" style="width: 18px; filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                            <a href="https://hardcore-mcnulty-85b4ec.netlify.app/" target="..." onclick="showslider()">
+                                                <button class="btn btn-d">
+                                                    <div class="image-title neon-text ViewIcon2"> Demo<br>
+                                                        <i class="far mt-2">
+                                                            <img src="/pic/social medias logo/Eye.png" style="width: 25px;filter: invert(1);" alt="">
+                                                        </i>
+                                                    </div>
+                                                </button>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="btn btn-d2">
+                                    <div class="mb-2">
+                                        <span class="usage">HTML5</span>
+                                        <span class="usage">CSS</span>
+                                        <span class="usage">Javascript</span>                                          
+                                    </div>
+                                    <p class="image-title neon-text2">The to do list is my first ever project when I first learn programming.</i>
+                                    </p>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/474c678246.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="vendor/slick/slick.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="/vendor/counter_up/counter_up.js"></script>
+    <script src="/js/slideForproject.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/circle.js"></script>
+    <script>
+function dark() {
+    document.querySelector('body').classList.add('dark-mode');
+    document.querySelector('body').classList.remove('neon-mode');
+    localStorage.setItem("data-theme", "dark");
+}
+function neon() {
+    document.querySelector('body').classList.add('neon-mode');
+    document.querySelector('body').classList.remove('dark-mode');
+    localStorage.setItem("data-theme", "neon");
+}
+       
+        window.onload= function() {
+            let theme_flag=localStorage.getItem("data-theme");
+            if(theme_flag=="dark"){
+                dark();
+            }else if(theme_flag == "neon"){
+                neon();
+            }else if(theme_flag == "light"){
+                light();
+            }
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+.circle-nav{
+
+    width: 70px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    z-index: 1;
+}
+.circle-nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    /* transform: rotateY(200deg); */
+}
+.nav-content .toggle-btnn,
+.nav-content span a{
+    height: 60px;
+    width: 60px;
+    background: rgb(40, 39, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.nav-content .toggle-btnn{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(225deg);
+    transition: all 0.4s ease;
+    /* background-color: black; */
+
+}
+nav.open .nav-content .toggle-btnn{
+    transform: rotate(90deg);
+}
+.nav-content span{
+    position: absolute;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+nav.open .nav-content span{
+    transform: rotate(calc(var(--i) * (360deg/-8))) translateY(120px);
+    opacity: 1;
+}
+.nav-content span a{
+    text-decoration: none;
+    transform: rotate(315deg);
+}
+.nav-content span a i{
+    font-size: 24px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (360deg/8)));
+    opacity: 0.8;
+    transition: 0.2s;
+}
+.nav-content span a:hover i{
+    opacity: 1;
+}
+#dragbox{
+    height:300px;
+    width:50px;
+    border:1px solid #000;
+    border-radius:10px;
+    margin:10px;
+    background:#31D2B1;
+}
+
+@media screen and (max-width: 420px){
+    .circle-nav{
+        bottom: -7em;
+        left: 0;
+    }
+}
+@media screen and (max-width: 920px){
+    .circle-nav{
+        bottom: -4em;
+        left: 0;
+    }
+}
+.imgtog{
+    width: 45px;
+    height: 46px;
+    margin-bottom: 6px;
+    animation-iteration-count: infinite; 
+    animation-duration: 8s;
+}

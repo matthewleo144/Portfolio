@@ -1,0 +1,286 @@
+:root {
+    --bs-primary:rgb(18, 100, 199);
+    --bs-secondary: #fca821;
+    --bs-success: #198754;
+    --bs-warning: #ffc107;
+    --bs-light: #f8f9fa;
+    --bs-softwhite: #dcdcdc;
+    --bs-dark: rgb(0, 18, 36);
+    --bs-button:rgb(244, 143, 177);
+    --bs-secoundary-tech:rgb(47, 48, 52);
+    --bs-secondary-white:rgb(240, 240, 240);
+    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+.dark-mode{
+    background-color: var(--bs-dark);
+}
+.dark-mode input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    }
+.dark-mode textarea::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+        }
+.dark-mode .neon-mode-bg{
+    background-color: yellow;
+    color: black;
+}
+.dark-mode .scroll-to-Contact{
+    color: #8bff00;
+    background: #222324;
+}
+.dark-mode .scroll-to-Contact:hover{
+    background-color: yellowgreen;
+    color: #000000;
+}
+.dark-mode .btn:hover{
+    background: #8ab40d;
+    color: #f7fff4;
+}
+.dark-mode .choose-btn{
+    background-color: #353509;
+    color: white;
+}
+.dark-mode .choose-btn:hover{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+.dark-mode .fa-envelope{
+    color: yellow;
+}
+.dark-mode .CorrectEmoji{
+    border: solid 1px rgb(238, 255, 0); 
+}
+.dark-mode .header{
+    background-color: #000000;
+}
+.dark-mode .site-nav-scroll .nav-link{
+    color: var(--bs-light) !important;
+}
+.dark-mode .nav-link.current-section{
+    border: 2px solid var(--bs-secondary);
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+    background-color: var(--bs-secondary);
+}
+.dark-mode .site-nav-scroll .nav-link.current-section{
+    border: 2px solid none;
+    background-color: var(--bs-secondary);
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+.dark-mode p{
+    color: var(--bs-softwhite);
+}
+.dark-mode .hver-text{
+    color: var(--bs-warning);
+}
+/* Home */
+.dark-mode .header-area h3{
+    color: var(--bs-light);
+    font-weight: bolder;
+}
+.dark-mode .abtCard{
+    background: #000000;
+    box-shadow: none;
+}
+.dark-mode .neon-bg{
+    background-color: #222324;
+    box-shadow: none;
+}
+.dark-mode .form-control{
+    border: 2px solid rgba(153, 205, 50, 0.248);
+    color: #000000;
+}
+.dark-mode .N-icon-text{
+    color: whitesmoke;
+}
+.dark-mode .N-icon-text2{
+    color: greenyellow;
+}
+.dark-mode .input-text{
+    background: #ffffff00;
+    color: wheat;
+}
+.dark-mode .neon-btn{
+    background: var(--bs-primary);
+    color: yellowgreen;
+}
+/* Skill */
+.dark-mode .skill{
+    /* background-image: url("../images/bg-3.svg"); */
+    color: var(--bs-light);
+}
+.dark-mode .progress-bar {
+    animation-name: animationProgress;
+    animation-duration: 2s;
+    background-color: var(--bs-warning);
+  }
+
+/* NavBar */
+.dark-mode .nav__link {
+    display: flex;
+    align-items: center;
+    color: var(--bs-softwhite);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 22px;;
+    background: transform 0.2s;
+}
+.dark-mode .nav__link--active {
+    color: var(--bs-softwhite);
+}
+.dark-mode .nav__link--active {
+    background: var(--bs-secondary);
+    text-decoration: none;
+    color: var(--bs-softwhite);
+}
+
+/* Side navbar */
+.dark-mode .nav__links {
+    position: fixed;
+
+    z-index: 2;
+    height: 100vh;
+    background: var(--bs-dark);
+    transform: translateX(250px);
+    transition: transform 0.2s;
+}
+
+.dark-mode .nav--open .nav__links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.dark-mode .nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+.dark-mode .bx-info-circle{
+    color: #fdc301;
+}
+/* Projects */
+.dark-mode .number{
+    position: relative;
+    top: 11px;
+    color: var(--bs-light);
+    background: var(--bs-warning);
+    padding: 1px;
+    border-radius: 50%;
+    width: 25px;
+}
+.dark-mode .iconThemecolor{
+    color: #ffc107;
+}
+.dark-mode .iconThemecolorhr{
+    background-color: antiquewhite;
+}
+/* Text */
+.dark-mode .mode-text{
+    color: var(--bs-light);
+}
+.dark-mode .mode-text2{
+    color: var(--bs-gray-tech);
+}
+.dark-mode .mode-text3{
+    color: var(--bs-softwhite);
+}
+.dark-mode .mode-text5{
+    color: var(--bs-softwhite);
+}
+
+/* Background */
+.dark-mode .mode-bg1{
+    background-color: var(--bs-light);
+}
+.dark-mode .mode-bg{
+    background-color: var(--bs-button);
+}
+.dark-mode .mode-bg2{
+    background-color: var(--bs-warning);
+}
+.dark-mode .mode-bg3{
+    background-color: var(--bs-secoundary-tech);
+}
+.dark-mode .mode-bg4{
+    background-color: var(--bs-secondary-white);
+}
+.dark-mode .services-card{
+    background-color: #222324;
+    box-shadow: none;
+}
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .dark-mode .number{
+            position: relative;
+            right: 0px;
+            top: 11px;
+            color: var(--bs-light);
+            background: var(--bs-warning);
+            padding: 1px;
+            border-radius: 50%;
+            width: 16px;
+        }
+}
+@media screen and (max-width: 780px) {
+    .dark-mode .site-nav .nav-link{
+        color: var(--bs-light) !important;
+        padding: 15px 20px;
+        border-radius: 10em;
+        margin-bottom: 5px;
+        box-shadow: 0 0 5px #00000015;
+    }
+    .dark-mode .site-nav .menu-icon{
+        color: var(--bs-secondary) !important;
+    }
+}
+.dark-mode .hambuger{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(208, 255, 0);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+/* .dark-mode .loader-container{
+    background-color: rgb(41, 37, 37);
+} */
+
+
+input:active{
+    outline: none;
+}
+
+
+.dark-mode .facebook{
+    color: var(--bs-warning);
+
+}
+.dark-mode .insta{
+    color: var(--bs-warning);
+
+}
+.dark-mode .Be{
+    color: var(--bs-warning);
+
+}
+.dark-mode .Git{
+    color: var(--bs-warning);
+
+}
+.dark-mode .LN{
+    color: var(--bs-warning);
+
+}
+.dark-mode .Youtube{
+    color: var(--bs-warning)}
+
+.dark-mode #SendMsg{
+    color: yellowgreen;
+}
+
+
+
+
+
+

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+        }
+
+        body{
+            background: #010101;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .output{
+            /*border: 1px solid white;*/
+            /*height: 150px;*/
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 3em;
+            padding: 10px 15px;
+        }
+        .input{
+            display: flex;
+            width: 240px;
+            height: 290px;
+            flex-flow: row wrap;
+            /*border: 1px solid white;*/
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .key{
+
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .key:active{
+            transform: scale(1.02);
+        }
+        .key-orange{
+            background-color: #fea009;
+            color: #fdf5ce;
+            transition: 0.5s;
+        }
+        .key-orange:active{
+            background-color: #fdf5ce;
+            color: #fea009;
+        }
+
+        .key-grey{
+            background-color: #a5a5a5;
+            color: #191919;
+
+        }
+        .key-dark{
+            background-color: #333333;
+            color: #f5f5f5;
+        }
+
+        .btn-double{
+            width: 110px;
+            border-radius: 28px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="calc" id="calc">
+    <div class="output">0</div>
+    <div class="input">
+        <div onclick="calc('clear')" class="key key-grey">AC</div>
+        <div onclick="calc('backspace')" class="key key-grey">B</div>
+        <div onclick="calc('%')" class="key key-orange">%</div>
+        <div onclick="calc('/')" class="key key-orange">&#247;</div>
+        <div onclick="calc(7)" class="key key-dark">7</div>
+        <div onclick="calc(8)" class="key key-dark">8</div>
+        <div onclick="calc(9)" class="key key-dark">9</div>
+        <div onclick="calc('*')" class="key key-orange">&times;</div>
+        <div onclick="calc(4)" class="key key-dark">4</div>
+        <div onclick="calc(5)" class="key key-dark">5</div>
+        <div onclick="calc(6)" class="key key-dark">6</div>
+        <div onclick="calc('-')" class="key key-orange">-</div>
+        <div onclick="calc(1)" class="key key-dark">1</div>
+        <div onclick="calc(2)" class="key key-dark">2</div>
+        <div onclick="calc(3)" class="key key-dark">3</div>
+        <div onclick="calc('+')" class="key key-orange">+</div>
+        <div onclick="calc(0)" class="key key-dark btn-double">0</div>
+        <div onclick="calc('.')" class="key key-dark">.</div>
+        <div onclick="calc('calculate')" class="key key-orange">=</div>
+    </div>
+</div>
+
+<script>
+
+    let calcMemory = [];
+    let operator = ["%","+","-","*","/"];
+
+    function showScreen(x) {
+
+    }
+
+    function calc(x) {
+
+        let screen = document.querySelector(".output");
+        let currentValue = screen.innerHTML;
+        console.log(currentValue);
+        // showScreen(x);
+
+        if(currentValue == 0){
+            screen.innerHTML = x;
+        }else if(currentValue.length >= 6){
+            screen.style.fontSize = "2em";
+        }
+        else{
+            screen.innerHTML += x;
+        }
+
+        let updateValue = screen.innerHTML;
+        console.log(updateValue);
+
+        if(x == "calculate"){
+            screen.innerHTML = currentValue;
+            // console.log("u click operator");
+            let arr = currentValue.split("");
+            // console.log(arr);
+            let lastIndex = arr.pop();
+
+            console.log(lastIndex);
+
+            if(!operator.includes(lastIndex)){
+                let question = currentValue;
+                let result = eval(currentValue);
+                let room = {question:question,answer:result};
+                calcMemory.push(room);
+                console.log(calcMemory);
+                screen.innerHTML = result;
+            }
+
+
+
+        }else if( x == "clear"){
+
+            screen.innerHTML = 0;
+
+        }else if( x == "backspace"){
+
+            if(currentValue.length == 1){
+                screen.innerHTML = 0;
+            }else{
+                let newCurrentValue = currentValue.substr(0,currentValue.length-1);
+                screen.innerHTML = newCurrentValue;
+            }
+
+        }else if( operator.includes(x) ){
+
+            console.log("u click operator");
+
+            if(currentValue != 0){
+
+                let arr = updateValue.split("");
+                // console.log(arr);
+                let lastIndex = arr.pop();
+                // console.log(arr);
+
+                let beforeLastIndex = arr.pop();
+                // console.log(arr);
+
+                if(operator.includes(lastIndex) && operator.includes(beforeLastIndex)){
+                    let newCurrentValue = updateValue.substr(0,updateValue.length-1);
+                    screen.innerHTML = newCurrentValue;
+                }
+            }else{
+                screen.innerHTML = 0;
+            }
+
+        }
+
+
+
+    }
+
+</script>
+
+</body>
+</html>

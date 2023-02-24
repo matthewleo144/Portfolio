@@ -1,0 +1,69 @@
+.boxx{
+    background-position: center;
+    background-color: darksalmon;
+    width: fit-content;
+    background: rgb(215,255,0);
+    background: linear-gradient(360deg, rgba(215,255,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    top: -30%;
+    width: 15%;
+    padding: 20px;
+    border-radius: 30px;
+    border-style: none}
+.fs{font-size: large;font-style: italic;}
+.mid{align-content: center;
+justify-content: center;}
+.Icon{display: flex;}
+.list{
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(190,193,173,1) 100%);
+    width: fit-content;
+    opacity: 0.5px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    top: -16%;
+    width: 15%;
+    padding: 20px;
+    border-radius: 30px;
+    border-style: none;}
+.INPUTBOX{
+    margin-bottom: 27px;
+    border-radius: 10px;
+    border-style: none;
+}
+body{background: url("https://image.freepik.com/vetores-gratis/ilustracao-de-banner-de-fundo-preto-de-luxo-com-gradiente-de-ouro-arte-deco-preto_25989-211.jpg");
+    height: 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+.text{
+    display: inline-block; 
+    font-size: 15px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.add-box{margin-left: 14px;}
+
+
+.list-Item:hover{
+    background: rgb(0,68,255);
+    background: linear-gradient(360deg, rgba(0,68,255,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 50px; 
+    justify-content: space-between;}
+.container{justify-content: space-between; display: flex;}
+.ho1:hover{background: gray; border-radius: 100px;border-style: none;}
+.ho1{background-color: rgb(162, 156, 252); border-style: none;}
+.ho2:hover{background: rgb(166, 255, 0); border-radius: 100px; border-style: none;}
+.ho2{background-color: red; border-style: none;}
+button{border-radius: 100px; border-style: none;}
+.bgimg{flex-wrap: wrap;}

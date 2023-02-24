@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main container-fluid">
+        <div class="row">
+            <!-- Sidebar Start -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 sidebar">
+                <div class="d-flex justify-content-between align-items-center py-2 mt-2 nav-brand">
+                    <div class=" d-flex align-items-center">
+                        <span class="bg-primary p-2 rounded mr-2">
+                            <i class="feather-shopping-bag text-white h4 mb-0"></i>
+                        </span>
+                        <span class="font-weight-bold h4 mb-0 text-uppercase text-primary">My Shop</span>
+                    </div>
+                    <button class="hidesidebarbtn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                    </button>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li class="menu-spacer"></li>
+
+                        <li class="menu-item">
+                            <a href="dashboard.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-home"></i>
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="plane.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-shopping-bag"></i>
+                                    Today Orders
+                                </span>
+                                <span class="badge badge-pill bg-white shadow-sm text-primary">15</span>
+
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="plane.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-grid"></i>
+                                    Recent Items
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="plane.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-pie-chart"></i>
+                                    Data Analysis
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="plane.html" class="menu-item-link active">
+                                <span>
+                                    <i class="feather-file"></i>
+                                    Plane Page
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-spacer"></li>
+                        <li class="menu-title">
+                            <span>Item Management</span>
+                        </li>
+                        <li class="menu-item">
+                                <a href="item_add.html" class="menu-item-link">
+                                    <span>
+                                        <i class="feather-plus-circle"></i>
+                                        Add Item
+                                    </span>
+                                </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="item_list.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-list"></i>
+                                        Item List
+                                    </span>
+                                    <span class="badge badge-pill bg-white shadow-sm text-primary p-1">15</span>
+                                </a>
+                        </li>
+                        <li class="menu-spacer"></li>
+                        <li class="menu-title">
+                            <span>User Management</span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-user-plus"></i>
+                                    Create User
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="item_list.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-users"></i>
+                                    Manage User
+                                </span>
+                                <span class="badge badge-pill bg-white shadow-sm text-primary">100</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-user-minus"></i>
+                                    Baned User
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-bar-chart"></i>
+                                    User Analysis
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-spacer"></li>
+                        <li class="menu-title">
+                            <span>Inventory</span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-file-plus"></i>
+                                    Create New Stock
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    All Stock
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="item_list.html" class="menu-item-link">
+                                <span>
+                                    <i class="feather-file-minus"></i>
+                                    Out of Stock
+                                </span>
+                                <span class="badge badge-pill bg-white shadow-sm text-primary">16</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-bar-chart-2"></i>
+                                    Stock Analysis
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-spacer"></li>
+                        <li class="menu-title">
+                            <span>Your Profile</span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-lock"></i>
+                                    Change Password
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <span>
+                                    <i class="feather-user-check"></i>
+                                    Edit Profile
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar end -->
+            <div class="col-12 col-lg-9 col-xl-10 vh-100 content">
+                <div class="row header mb-4">
+                    <div class="col-12">
+                        <div class="p-2 bg-primary d-flex justify-content-between align-items-center rounded">
+                            <button class="showsidebarbtn btn btn-primary d-block d-lg-none">
+                                <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                            </button>
+                            <form action="" method="POST" class="d-none d-md-block">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control mr-2">
+                                    <button class="btn btn-light">
+                                        <i class="feather-search text-primary"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <img src="/Me/PP.jpg" class="user-img shadow-sm" alt="">
+                                    Matthew Leonardi
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Log Out</a>
+
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Area Start -->
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-white mb-4">
+                                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Plane Page</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Content Area Start -->
+            </div>
+        </div>
+    </section>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="vendor/counter_up/counter_up.js"></script>
+    <script src="vendor/chart_js/chart.min.js"></script>
+
+
+    <script src="/js/app.js"></script>
+    <script src="/js/dashboard.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/animate_it/animate.css">
+    <script src="https://kit.fontawesome.com/474c678246.js" crossorigin="anonymous"></script>
+    <style></style>
+</head>
+<body style="background: rgb(88, 79, 79)">
+    <div class="container">
+        
+        <div class="one active player-0-panel">
+            <div id="name-0" >PLAYER 1</div>
+            <div id="score-0">0</div>
+            <div class="under">
+                Current score
+                <div class="num" id="current-0">0</div>
+            </div>
+        </div>
+        <div class="two player-1-panel">
+            <div id="name-1">PLAYER 2</div>
+            <div id="score-1">0</div>
+            <div class="under">
+                Current score
+                <div class="num" id="current-1">0</div>
+            </div>
+        </div>
+    
+        <div class="empty"><i class="fas fa-smile-wink"></i></div>
+            
+        </div>
+            <button class="btn-new justify-content-end ">
+                 <h3>Start</h3>
+                </button>
+            <button class="btn-roll justify-content-end" >
+                <h3>
+                    <i class="fas fa-sync" style="line-height: unset;"></i> 
+                    Roll Dice
+                </h3>
+            </button>
+            <button class="btn-hold justify-content-end">
+                <h3>
+                    <i class="far fa-arrow-alt-circle-down" style="line-height: unset;"></i> 
+                Hold
+                </h3>
+            </button>
+            <input type="text" placeholder="Final Score" class="final-score ">
+            
+        <div class="con justify-content-end">
+            <img src="dice-3.png" alt="Dice" class="dice1" id="dice-1">
+            <img src="dice-1.png" alt="Dice" class="dice2" id="dice-2">
+        </div>
+    <script src="challenge.js"></script>
+</body>
+</html>

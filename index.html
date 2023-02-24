@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matt Leo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio"/>
+    <meta name="Matthew Leonardi" content=""/>
+    <meta property="og:title" content="Matthew Leonardi's Portfolio"/>
+    <meta property="og:image" content="pic/Porfolio.png">
+    <meta property="og:image" content="images/site-ss.png">
+    <meta property="og:site_name" content="Portfolio Project"/>
+    <meta property="og:description" content="This is my Portfolio where you can see my projects about both UI/UX designs and Personal website projects."/>
+    <meta property="og:url" content="https://mattleo.netlify.app/"/>
+    <meta property="og:site_name" content="Matt Leo's Portfolio"/>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/pic/Name Logo1.png" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="/css/dark-mode.css">
+    <link rel="stylesheet" href="/css/neon-mode.css">
+    <link rel="stylesheet" href="/css/circle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/pic/Portfolio.png" />
+    <style>
+            .loader-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(0, 0, 0);
+                    height: 100vh;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 2000;
+                    
+                }
+            .loader {
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                position: relative;
+                }
+                .loader::after,
+                .loader::before {
+                content: '';  
+                box-sizing: border-box;
+                width: 48px;
+                height: 48px;
+                border: 2px solid #FFF;
+                position: absolute;
+                left: 0;
+                top: 0;
+                animation: rotationBreak 3s ease-in-out infinite alternate;
+                }
+                .loader::after {
+                border-color: #FF3D00;
+                animation-direction: alternate-reverse;
+                }
+
+                @keyframes rotationBreak {
+                0% {
+                    transform: rotate(0);
+                }
+                25% {
+                    transform: rotate(90deg);
+                }
+                50% {
+                    transform: rotate(180deg);
+                }
+                75% {
+                    transform: rotate(270deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+                }
+    
+
+
+
+
+            .dropdown-container {
+                display: none;
+                padding-left: 8px;
+                }
+
+                /* Optional: Style the caret down icon */
+            .fa-caret-down {
+                float: right;
+                padding-right: 8px;
+                }
+                hr{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }      
+    </style>
+    
+  </head>
+  <body class="m-0">
+        <div class="loader-container" style="z-index: 2000;">
+            <div class="loader"></div>
+        </div>
+
+        <header class="container-fluid site-nav animated slideInDown">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 px-0" style="padding-bottom: 2px;">
+                            <nav class="navbar align-items-center d-none d-lg-flex navbar-expand-lg justify-content-between"  id="navbar">
+                                <a href="" class=" col-2 navbar-brand" style="    position: relative;
+                                right: 3em;">
+                                    <img src="/pic/Name Logo4.png" class="site-logo" alt="">
+                                </a>
+                                
+                                <div class="col-8 collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="    position: relative;right: 1.8em;
+                                ">
+                                  <ul class="navbar-nav" >
+                                    <li class="nav-item pt-1" style="margin-left: 30px;">
+                                        <div class="nav-item menu ThemeNav">
+                                            <div class="d-flex optionTheme" style="color: black;
+                                           width: 9em;justify-content: space-between;">
+                                                <img src="/pic/skill icons/Theme-Icon.png " class="N-icon" style="width: 16px;margin:auto; margin-left: 20px;"  alt="">
+                                                <span class="themeoption" style="font-weight:900;">
+                                                    Themes</span>
+                                                <i class="fa fa-caret-down" style="color: antiquewhite;    vertical-align: middle; margin: auto;
+                                                "></i>
+                                            </div>
+                                            <div class="ani-menu dropb" style="        position: absolute;
+                                            left: -33px;
+                                            top: 38px;
+                                            width: 13em;
+                                            z-index: 1;">
+                                              <div class="d-flex align-items-center justify-content-between">
+                                                  <p class="fontSze font-weight-bold mr-2 text-white">Light Mode</p>
+                                                  <label>
+                                                      <input type="checkbox" id="checker1" onclick="light()">
+                                                      <div class="check checkBtn d-inline-flex align-items-center">
+                                                          <div class="switchOn">Off</div>
+                                                          <div class="switchOff">On</div>
+                                                      </div>
+                                                  </label>                                       
+                                              </div>
+                                              <div class="d-flex align-items-center justify-content-between">
+                                                  <p class="fontSze font-weight-bold mr-2 text-white">Dark Mode</p>
+                                                  <label>
+                                                      <input type="checkbox" id="checker2" onclick="dark()">
+                                                      <div class="check checkBtn d-inline-flex align-items-center">
+                                                          <div class="switchOn">Off</div>
+                                                          <div class="switchOff">On</div>
+                                                      </div>                                               
+                                                  </label>
+                                              </div>
+                                              <div class="d-flex align-items-center justify-content-between">
+                                                  <p class="fontSze font-weight-bold mr-2 text-white">Aesthetic Mode</p>                                            
+                                                  <label>
+                                                      <input type="checkbox" id="checker3" onclick="neon()">
+                                                      <div class="check checkBtn d-inline-flex align-items-center">
+                                                          <div class="switchOn">Off</div>
+                                                          <div class="switchOff">On</div>
+                                                      </div>
+                                                  </label>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item pt-1" style="margin-left: 15px;">
+                                      <a class="nav-link text-uppercase current-section text-white N-icon-text" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item pt-1" style="margin-left: 15px;">
+                                        <a class="nav-link text-uppercase text-white N-icon-text" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item pt-1" style="margin-left: 15px;">
+                                        <a class="nav-link text-uppercase text-white N-icon-text" href="#skill">Skills</a>
+                                    </li>
+                                    <li class="nav-item pt-1" style="margin-left: 15px;">
+                                        <a class="nav-link text-uppercase text-white N-icon-text" href="#project">Projects</a>
+                                    </li>
+                                    <li class="nav-item pt-1" style="margin-left: 15px;">
+                                        <a class="nav-link text-uppercase text-white N-icon-text" href="#contact">Contact</a>
+                                    </li>                            
+                                    <li class="nav-item menu Warnin">
+                                              <div class="d-flex optionTheme1">
+                                              <i class='bx bx-info-circle' style="color:yellow;"></i>
+                                              </div>
+                                              <div class="ani-menu1 dropb" style="position: absolute;
+                                              left: -27em;
+                                              width: 29em;
+                                              top: 41px;
+                                              ">
+                                              <ul style="list-style-type:disc;">
+                                                <li>The cursor effect is disabled on some action areas.</li>
+                                                <li>You can't switch two themes simultaneously. </li>
+                                                <li>The UI UX design folder won't be the same as the Website Project folder. It is better to see them on Behance account.</li>
+                                              </ul>
+                                              </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="side-nav d-lg-none" style="position: absolute;z-index: 2;">
+            <header class="header">
+                <a href="">
+                    <img src="/pic/Name Logo4.png" class="site-logo" alt="">
+                </a>
+                <div class="hamburgerMenu header__button N-icon" id="btnNav" type="button">
+                    <div class="hambuger line1"></div>
+                    <div class="hambuger line2"></div>
+                    <div class="hambuger line3"></div>
+                </div>
+            </header>
+            <nav class="sidebar OverlayMenu">
+                <div class="nav__links vh-100 align-content-center justify-content-center" style="display: flex;
+                align-items: center; z-index: -1;">
+                    <div class="mt-5">
+                        <img src="/pic/My pic/ReadyPlayerMe-Avatar (1).png" width="150px;" class="my-pic-side" alt="">
+                        <h4 class="mode-text font-weight-bolder N-icon-text">Matthew Leonardi</h4>
+                        <!-- <hr class="iconThemecolorhr N-icon-text"> -->
+                        <div class="d-flex justify-content-between " style="padding: 0 1em;">
+                            <a href="https://www.facebook.com/matthewleonardi.paingaungkhant/" target="_blank" class=' fa facebook fa-facebook'></a>
+                            <a href="https://www.instagram.com/matt_leo00/" target="_blank" class=' fa insta fa-instagram'></a>
+                            <a href="https://www.behance.net/matthew1442000" target="_blank" class=' fa Be fa-behance'></a>
+                            <a href="https://github.com/matthewleo144" target="_blank" class=' fa Git fa-github'></a>
+                            <a href="https://www.linkedin.com/in/paing-aung-khant-7943301b5/" target="_blank" class=' fa LN fa-linkedin'></a>
+                            <a href="https://www.youtube.com/channel/UCEiH591nrIeQHNr2B0686Ew/featured" target="_blank" class=' fa Youtube fa-youtube'></a>
+                            
+                        </div>
+                        <!-- <br> -->
+                        <hr class="iconThemecolorhr N-icon-text Line1">
+                        <div>
+                            <a href="#home" class="nav__link d-flex current-active">
+                                <i class="iconThemecolor fas fa-home N-icon"></i>
+                                <span class="N-icon-text" style="margin-left: 6px;">Home</span>
+                            </a>
+                            <a class="nav__link d-flex " href="#about">
+                                <i class="iconThemecolor fas fa-id-badge ml-0 N-icon" style="margin-left: 1px;"></i>
+                                <span class="N-icon-text" style="margin-left: 10px;">About</span>
+                            </a>
+                            <a class="nav__link d-flex" href="#skill">
+                                <i class="iconThemecolor fas fa-cogs N-icon"></i>
+                                <span class="N-icon-text" style="margin-left: 4px;">Skill</span>
+                            </a>
+                            <a class="nav__link d-flex" href="#project">
+                                <i class="iconThemecolor fas fa-folder-open N-icon"></i>
+                                <span class="N-icon-text" style="margin-left: 4px;">Project</span>
+                            </a>
+                            <a class="nav__link d-flex" href="#contact">
+                                <i class="iconThemecolor fas fa-envelope N-icon"></i>
+                                <span class="N-icon-text" style="margin-left: 4px;">Contact</span>
+                            </a>
+                            <hr class="iconThemecolorhr Line2">
+                            <div class="col-12" style="background-color:black;     position: relative;
+                            bottom: 12px;">
+                                <div class="N-icon-text d-flex flex-column flex-lg-row justify-content-between py-3">
+                                        <span class="text-white" style="font-size: 12px;">Copyright © 2023. All Rights Reserved</span>
+                                        <span class="text-white" style="font-size: 12px;">Designed by Matt Leo</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__overlay"></div>
+            </nav>
+        </div>
+        <div id="progressbar" style="z-index: 1;"></div>
+        <div id="scrollPath"></div>
+        <canvas id="canvas" class="N-icon-text" style="position:fixed; z-index: 0;"></canvas>
+        
+        <div class="social-v d-flex social-icon" style="z-index: 1;justify-items: center;">
+                <a href="https://www.facebook.com/matthewleonardi.paingaungkhant/" target="_blank">
+                    <i class='Icon-Size facebook  fa fa-facebook'></i>                                            
+                    </a>
+                <a href="https://www.instagram.com/matt_leo00/" target="_blank">
+                    <i class='Icon-Size fa insta fa-instagram'></i>
+                </a>
+                <a href="https://www.behance.net/matthew1442000" target="_blank">
+                    <i class='Icon-Size fa Be fa-behance'></i>
+                </a>
+                <a href="https://github.com/matthewleo144" target="_blank">
+                    <i class='Icon-Size fa Git fa-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/paing-aung-khant-7943301b5/" target="_blank">
+                <i class='Icon-Size fa LN fa-linkedin'></i>                                            
+                </a>
+                <a href="https://www.youtube.com/channel/UCEiH591nrIeQHNr2B0686Ew/featured" target="_blank">
+                <i class='Icon-Size fa Youtube fa-youtube'></i>                                            
+                </a>
+        </div>
+        <a class="scroll-to-Contact " href="#contact">
+            <i class="fa fa-envelope Eve animated tada" style="font-size: 2em;animation-iteration-count: infinite;    animation-duration: 5s; "></i>
+            
+        </a> 
+
+        <nav class="circle-nav d-lg-none" style="position:fixed;z-index: 1;">
+            <div class="nav-content">
+                <div class="toggle-btnn">
+                    <img src="/pic/skill icons/Theme-Icon.png " id="mode-icon1" class="imgtog animated tada N-icon" alt="">
+                    <i class='bx bx-plus plusd d-none N-icon' id="mode-icon" style="color: yellow;"></i>
+                </div>
+                <span style="--i:5;">
+                    <a " onclick="light()">
+                        <i class='bx bxs-sun N-icon' style="color: yellow;"></i>
+                    </a>
+                </span>
+                <span style="--i:4;">
+                    <a " onclick="dark()">
+                        <i class='bx bxs-moon N-icon' style="color: yellow;"></i>
+                    </a>
+                </span>
+                <span style="--i:3;">
+                    <a  onclick="neon()">
+                        <img src="/pic/skill icons/Neon.png" alt="" style="    width: 60px;
+                    height: 60px; transform: rotate(135deg); border-radius: 100%; ">
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <div id="up">
+            <a class="wow scroll-up scroll-to-next shadow "" href="#home">
+                <svg  class="up-icon" style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+            </a>
+        </div>
+        <section id="home" class="home container-fluid"   style="z-index: -1;" >              
+            <div class="row">
+                <div class="container">
+                    <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row homee" style="    display: flex;
+                    justify-content: space-evenly; margin-top: 2em;">
+                        <div class="col-12 col-md-6 homee1" >
+                            <div class="my-3 aos-init aos-animate Intro-Neon" data-aos="zoom-in" data-aos-delay="400" style="    margin-left: 3em;">
+                                <h2 class="mode-text animated slideInDown neon-text ani-delay-1">Hi there,</h2>
+                                <div class="header-area">
+                                    <h3>I'm 
+                                        <span class="animate"></span>
+                                    </h3>
+                                </div>
+                                <p class="btn text-uppercase animated pulse neon-mode-bg" style="animation-iteration-count: infinite;    animation-duration: 4s; font-size: 12px;">Freelance Available</p> <br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pic-mother-container" style="margin: auto;display: flex;
+                        justify-content: center;" >
+                                <img src="/pic/My pic/ReadyPlayerMe-Avatar (1).png"class="my-pic" alt="">
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about container-fluid py-5 py-md-0"  >
+            <div class="row min-vh-100 align-items-center py-5 py-md-0" style="display: flex;
+            justify-content: center;" >
+                <div class="col-12 col-md-6  pic-mother-container" style="
+                bottom: 70px;
+                position: relative;
+                z-index: -1;">
+                        <img src="/pic/About.png" style="-webkit-box-reflect: below -3px linear-gradient(transparent,transparent,#0004);" class="my-picabt" alt="">
+                </div>
+                <div class="col-12 col-md-6 about-text py-5 text-center" style="z-index: 0; display: flex; justify-content: center;"
+                    data-aos-anchor-placement="bottom-bottom">
+                        <div class="content-2-text abtCard" style="
+                        padding: 2em;
+                        border-radius: 4em 0 4em 0;" >
+                            <p class="N-icon-text" data-aos="flip-left">Biography</p>
+                            <h4 class="text-uppercase mode-text N-icon-text" style="font-size: larger;"  data-aos="fade-in" data-aos-duration="1000">Who I Am</h4>
+                            <p class=" py-4 N-icon-text text-left" style="font-size: smaller;"  >
+                                My actual name is Paing Aung Khant. I'm 23-year-old. I'm passionate about doing UI/UX design and Frontend development. If I get the chance to learn backend, I will try my best at them as well.
+                            </p>
+                            <div style="justify-content: center;
+                            display: flex;">
+                                <a href="/pic/Paing Aung Khant.pdf" class="Cv d-flex" style="font-weight: bold;font-size: 11px;justify-content: space-evenly;width: auto;">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <i class='bx bxs-down-arrow-square aRowdwn'></i>
+                                    <p class="neon-t" style="margin:auto;margin: auto;
+                                    text-align: initial;
+                                    margin-left: 17px;">Download Resume</p>
+                                </a>
+                                <!-- <a href="/pic/Paing Aung Khant.pdf" class="Cv d-flex" style="font-weight: bold;font-size: 11px;justify-content: space-evenly;width: auto;">
+                                    <p class="neon-t" style="margin:auto;margin: auto;
+                                    text-align: initial;">CV</p>
+                                </a> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="skill" class="skill container-fluid mode-text" style="width: 100%;">
+            <div class="row min-vh-100 skill-bg" >
+                <div class="col-12 container text-center">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <div class="my-5 wow slideInDown">
+                                <h2 class="font-weight-bolder text-uppercase N-icon-text">Expertise</h2>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="500">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/html.png" class="mode-text4" alt="" style="width:50px;">
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >HTML</p>
+                            </div>
+                            <div class="d-flex justify-content-between" >
+                                
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">90</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar1">
+                                <div class="bar wow progress-bar NeonBar1" style="width: 90%;border-radius: 10px; background-color: #f06427;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="1000">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/css.png" class="mode-text5" alt="" style="width:50px;">                                
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >CSS</p>
+                            </div>                          
+                            <div class="d-flex justify-content-between">  
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">95</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar2">
+                                <div class="bar wow progress-bar" style="width: 95%;border-radius: 10px;background-color: #414bd4;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="1500">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/js.png" alt="" class="mode-text4" style="width:51px;">                                
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Javascript</p>
+                            </div>                            
+                            <div class="d-flex justify-content-between">
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">60</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar3">
+                                <div class="bar wow progress-bar" style="width: 60%;border-radius: 10px;background-color: #e4a328;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="2000">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/bootstrap.png" class="mode-text5" alt="" style="width:51px;">                                
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Bootstrap</p>
+                            </div> 
+                            <div class="d-flex justify-content-between">
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">85</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar4">
+                                <div class="bar wow progress-bar" style="width: 85%;border-radius: 10px;background-color: #573f7d;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="2500">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/figma.png" class="mode-text4" alt="" style="width:32.6px;">                                
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Figma</p>
+                            </div> 
+                            <div class="d-flex justify-content-between">    
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">90</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar5">
+                                <div class="bar wow progress-bar" style="width: 90%;border-radius: 10px;background-color: #0acf83;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="3000">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/adobe XD.png" class="mode-text5" alt="" style="width:50px;">                                
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Adobe XD</p>
+                            </div> 
+                            <div class="d-flex justify-content-between">
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">95</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar6">
+                                <div class="bar wow progress-bar" style="width: 95%;border-radius: 10px;background-color: #fb5ef2;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="2500">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/photoshop.png" class="mode-text5" alt="" style="width:49px;">                               
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Adobe Photoshop</p>
+                            </div> 
+                            <div class="d-flex justify-content-between">   
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">75</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar7">
+                                <div class="bar wow progress-bar" style="width: 75%;border-radius: 10px;background-color: #31c5f0;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-lg-5 pt-2" data-aos="zoom-in-up"  data-aos-duration="3000">
+                            <div class="HoverTxt">
+                                <img src="/pic/skill icons/premiere-pro.jpg" class="mode-text5" alt="" style="width:49px;">                              
+                                <p style="font-size: 11px;" class="tiTle mode-text5" >Adobe Premier Pro</p>
+                            </div> 
+                            
+                            <div class="d-flex justify-content-between">
+                                <div style="font-size: 12px;">
+                                    <span class="counter-up">95</span><span>%</span>
+                                </div>
+                            </div>
+                            <div class="progress NeonBar8">
+                                <div class="bar wow progress-bar" style="width: 95%;border-radius: 10px;background-color: #d473f8;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 about-text py-5 text-center" style="    position: relative;
+                z-index: -1;">
+                    <div class="row justify-content-center d-flex circle">
+                        <div class="col-12 mb-5 >
+                            <div class="my-5 wow slideInDown">
+                                <h4 class="text-uppercase font-weight-bolder mt-5 N-icon-text">Further Efficiency Skills</h4>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-3 pt-2 p-1" data-aos="zoom-out"  data-aos-duration="500">
+                            <div class="progress-circle-container">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="var(--bs-secondary)"  stroke-width="5" fill-opacity="0" class="progress-circle" style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 40%;"></path>
+                                </svg>
+                                <div>
+                                    <span class="progress-circle-text m-0 counter-up d-inline">80</span>
+                                    <span class="progress-circle-text-per">%</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 N-icon-text mode-text3">Communication</p>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-3 pt-2 p-1" data-aos="zoom-out"  data-aos-duration="1000">
+                            <div class="progress-circle-container">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="var(--bs-secondary)" stroke-width="5" fill-opacity="0" class="progress-circle" style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 65%;"></path>
+                                </svg>
+                                <span class="progress-circle-text m-0 counter-up d-inline">85</span>
+                                <span class="progress-circle-text-per">%</span>
+                            </div>
+                            <p class="mt-3 N-icon-text mode-text3">Team Work</p>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-3 pt-2 p-1" data-aos="zoom-out"  data-aos-duration="1500">
+                            <div class="progress-circle-container">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="var(--bs-secondary)" stroke-width="5" fill-opacity="0" class="progress-circle" style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 20%;"></path>
+                                </svg>
+    
+                                <span class="progress-circle-text m-0 counter-up d-inline">90</span>
+                                <span class="progress-circle-text-per">%</span>
+    
+                            </div>
+                            <p class="mt-3 N-icon-text mode-text3">Project Management</p>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-3 pt-2 p-1" data-aos="zoom-out"  data-aos-duration="2000">
+                            <div class="progress-circle-container">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee" stroke-width="5" fill-opacity="0"></path>
+                                    <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="var(--bs-secondary)" stroke-width="5" fill-opacity="0" class="progress-circle" style="stroke-dasharray: 298.493, 298.493; stroke-dashoffset: 40%;"></path>
+                                </svg>
+    
+                                <span class="progress-circle-text m-0 counter-up d-inline">80</span>
+                                <span class="progress-circle-text-per">%</span>
+                            </div>
+                            <p class="mt-3 N-icon-text mode-text3">English</p>
+                        </div>
+                        <!-- <div class="col-12">
+                            <div class="my-5">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="project container-fluid">
+            <div class="row pb-5 min-vh-100" style="align-items: center;">
+                <div class="container">
+                    <div class="row pt-5 d-flex justify-content-around text-center">
+                        <div class="col-12 toAdjust" style="position: relative;
+                        z-index: -1;">
+                            <div class="my-5 wow slideInDown">
+                                <h4 class="text-uppercase font-weight-bolder mode-text N-icon-text">Projects</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3"  >
+                            <div class="card mb-5 services-card ani-delay-1" style=" margin:auto;">
+                                <div class="card-body">
+                                        <div class="image">
+                                            <img src="/pic/skill icons/Code.svg" alt="" style="width:100%;padding: 2px;">
+                                            <div class="image-overlay image-overlay--blur">
+                                                <a onclick="showslider()" href="/websites projects.html">
+                                                <button class="btn-d N-icon">
+                                                    <div class="image-title hver-text"> 
+                                                        <!-- <img src="/pic/social medias logo/Eye.png" style="width: 12px;margin-right:10px;margin-top:-1px;filter: invert(1); vertical-align: middle;" alt=""> -->
+                                                        View
+                                                    </div>
+                                                </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <h4 class="font-weight-bolder my-4 N-icon-text2" style="font-size: 15px;">Website Projects</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3"  >
+                            <div class="card mb-5 services-card ani-delay-1" style=" margin:auto;">
+                                <div class="card-body">
+                                        <div class="image">
+                                            <img src="/pic/skill icons/behance.png" alt="" style="width:100%;padding: 2px;">
+                                            <div class="image-overlay image-overlay--blur">
+                                                <a onclick="showslider()" href="https://www.behance.net/matthew1442000" target="...">
+                                                <button class="btn-d N-icon">
+                                                    <div class="image-title hver-text"> 
+                                                        <!-- <img src="/pic/social medias logo/Eye.png" style="width: 12px;margin-right:10px;margin-top:-1px;filter: invert(1); vertical-align: middle;" alt=""> -->
+                                                        View
+                                                    </div>
+                                                </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4 class="font-weight-bolder my-4 N-icon-text2" style="font-size: 15px;">UI UX Projects</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mother-container container-fluid" style="    display: flex;
+        justify-content: center;margin:0;padding:0;" >
+
+                <section class="container" style="margin:0;padding:0;">
+                    <h4 class="mode-text N-icon-text" style="font-weight: bolder;
+                    text-transform: uppercase;
+                    margin-bottom: 4em;
+                    text-align: center;">Reviews</h4>
+                    <div class="row pricing-slide px-0 mx-0" >
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://thumbs.dreamstime.com/b/business-man-4008163.jpg" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">John Smith</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://th.bing.com/th/id/OIP.KWQmVv-Xc9AModr_NcrXVwAAAA?pid=ImgDet&rs=1" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">Polly Tuffs</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://th.bing.com/th/id/OIP.tL1dKiGcEl_zmAltMAiCDQHaHa?pid=ImgDet&rs=1" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">James Hunt</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">Nathan D.</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">Kevin Tuck</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 ">
+                                    <div class="card mb-5 services-card RevCard Vinilla-Effect ">
+                                        <div class="card-body body-review text-center d-flex">
+                                            <div style="width:13em;">
+                                                <div class="head-review">
+                                                    <img class="review-img" src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; margin-left: 1em;">
+                                                <div class="name-review N-icon-text">Mary Will</div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="desc-review text-left" style="font-size: 0.6em;">Lorem ipsum dolor, sit amet consectetur</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </section>
+
+        </section>
+        <section id="contact" class="project container-fluid">
+
+            <!-- <img class="d-none d-lg-block d-xl-none" src="/pic/Group 1.svg" alt=""> -->
+
+            <div class="row pb-5 min-vh-100" style="align-items: center; position: relative; top: 3em;">
+                <div class="container">
+                    <div class=" row py-5" style="    display: flex;
+                    justify-content: center;
+                "> 
+                
+                <div class="col-12 col-md-6 p-5 form-ori neon-bg " title="Your email will be directly delivered to the developer email by filling up this form. Thank You.👱‍♂️" style="height: 100%;">
+                    <div style="    position: absolute;
+                    top: -1em;
+                    left: 1em;
+                    padding: 2px 10px;
+                    font-size: 20px;
+                    color: aqua;
+                    background: dimgray;">Contact Me</div>
+                            <form id="form1">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-text" placeholder="Username" name="from_name" id="from_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control input-text" placeholder="Email" name="email_id" id="email_id" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control input-text" placeholder="Message" rows="5" name="message" id="message" required></textarea>
+                                </div>
+                                <div class="N-icon d-none" id="SendMsg" style="font-style: italic;
+                                align-items: center;
+                                display: flex;" >
+                                    <i class='bx bx-check-double' style=" font-size: 15px;"></i>
+                                     <span class="ml-1">The email was sent successfully!</span>
+                                </div>
+                                <br>
+                                <div class="form-group" type="submit" id="buttonEM">
+                                    <button class="btn neon-btn">
+                                        <i class="fa fa-paper-plane" style="position: relative;
+                                        right: 9px;"></i>
+                                        Send</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6 p-5" style="text-align:center;">
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.9945990028934!2d96.12130570335331!3d16.81338706069709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb212e82b8ab%3A0x33cb16946138d9a8!2sKyimyindaing%20Township%2C%20Yangon%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2ssg!4v1631289026636!5m2!1sen!2ssg" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                            
+                            <h4 class=" mb-4 font-weight-bold N-icon-text mode-text" style="font-style:italic;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; " >About This Website</h4>
+
+                            <iframe width="100%" height="80%" src="https://www.youtube.com/embed/l4s0A1nPTIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 footer text-center justify-content-center align-content-center">
+                        <div class="container-fluid">
+                            <div class="row justify-content-lg-around" style="font-size: 0.6em;">
+                                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                                    <div class="mode-text text-center" style="justify-content: center;
+                                    align-items: center;
+                                    display: grid;">
+                                        <h4 class=" mb-4 font-weight-bolder N-icon-text" >Follow Me On</h4>
+                                        <div class="d-flex justify-content-between social-icon ">
+                                                <a href="https://www.facebook.com/matthewleonardi.paingaungkhant/">
+                                                <i style="font-size: 25px;padding: 7px;" class=' fa facebook fa-facebook'></i>                                            
+                                                </a>
+                                                <a href="https://www.instagram.com/matt_leo00/">
+                                                    <i style="font-size: 25px;padding: 7px;" class='fa insta  fa-instagram'></i>
+                                                </a>
+                                                <a href="https://www.behance.net/matthew1442000">
+                                                    <i style="font-size: 25px;padding: 7px;" class='Be fa fa-behance'></i>
+                                                </a>
+                                                <a href="https://github.com/matthewleo144">
+                                                    <i style="font-size: 25px;padding: 7px;" class='fa Git fa-github'></i>
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/paing-aung-khant-7943301b5/">
+                                                <i style="font-size: 25px;padding: 7px;" class='fa LN fa-linkedin'></i>                                            
+                                                </a>
+                                                <a href="https://www.youtube.com/channel/UCEiH591nrIeQHNr2B0686Ew/featured">
+                                                <i style="font-size: 25px;padding: 7px;" class='fa Youtube fa-youtube'></i>                                            
+                                                </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-2 mb-5">
+                                    <div class="font-weight-bolder" style="justify-content: center;
+                                    align-items: center;
+                                    display: grid;">
+                                        <h4 class="text-uppercase mb-4 mode-text N-icon-text">Contact</h4>
+                                        <table>
+                                            <tr>
+                                                <td style="text-align: right;">
+                                                    <i style="font-size: 30px;" class='iconThemecolor phone fa fa-phone'></i>
+                                                </td>
+                                                <td style="text-align: left;" class="pl-3">
+                                                    <a href="tel:+959799674481" style="text-decoration: none;" class="mode-text mb-3 N-icon-text">
+                                                    +959799674481
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: right;">
+                                                    <i style="font-size: 30px;" class='iconThemecolor mail bx bxl-gmail'></i>
+                                                </td>
+                                                <td style="text-align: left;" class="pl-3">
+                                                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" style="text-decoration: none;" class="mode-text mb-3 N-icon-text">
+                                                        Khantaung306@gmail.com
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="background-color: black;position: relative;z-index: -1;" >
+            <div class="container-fluid footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class=" d-flex flex-column flex-md-row justify-content-between py-3 N-icon-text" style="
+                            display: flex;">
+                                    <span class="text-white" style="font-size: 12px;">Copyright © 2023. All Rights Reserved</span>
+                                    <span class="text-white" style="font-size: 12px;">Designed by Matt Leo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/circle.js"></script>
+        <script src="/js/curser.js"></script>
+        <script src="https://kit.fontawesome.com/474c678246.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="/js/popper.js"></script>
+        <script src="vendor/slick/slick.js"></script>
+        <script src="vendor/slick/slick.min.js"></script>
+        <script src="/js/slides.js"></script>
+        <script src="vendor/wow/wow.js"></script>
+        <script src="vendor/way_point/jquery.waypoints.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/js/type.js"></script>
+        <script src="/js/vanilla.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('DGvmw42yLNo_iMu5u')</script>
+
+
+        
+        <script>
+            AOS.init();
+            let progress = document.getElementById('progressbar');
+            let totalheight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset/totalheight)*100;
+                progress.style.height = progressHeight + "%";
+            }
+
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+            }
+
+
+            var typed = new Typed('.animate',{
+            strings: [
+                "Matt Leo.",
+                "a Frontend Developer.",
+                "a UI/UX Designer."
+            ],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        });
+
+
+        VanillaTilt.init(document.querySelectorAll(".Vinilla-Effect"), {
+            max: 25,
+            speed: 400
+        });
+
+
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+          })
+
+
+        //Form to send Email
+        const btn = document.getElementById('buttonEM');
+
+        document.getElementById('form1')
+        .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_tktkzsb';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+            btn.value = 'Send Email';
+            // alert('The email was sent successfully!🙆‍♀️');
+            document.getElementById('from_name').value = '';
+            document.getElementById('email_id').value = '';
+            document.getElementById('message').value = '';
+
+            const SdM = document.getElementById('SendMsg');
+            if(SdM.classList.contains("d-none")){
+                SdM.classList.remove("d-none");
+            setTimeout(function(){
+                    SdM.classList.add("d-none");
+                }, 3000);
+                    }
+
+            const Noti = new Audio(`pic/Noti.mp3`);
+            Noti.play();
+            }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+            });
+        });
+
+
+    </script>
+  </body>
+</html>
