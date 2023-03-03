@@ -4,5 +4,5 @@ Where you can see my personal projects and also my ui ux design.
 There are three modes I specialized it.
 They are 
 1. Light Mode
-2. Dark Mode
-3. Neon Mode (Recommend)
+2. Dark Mode and
+3. Neon Mode (Recommend).
