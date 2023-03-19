@@ -57,7 +57,7 @@ function navScroll(){
 
 new WOW().init();
 $(window).on("load",function(){
-    $('.loader-container').fadeOut(600,function(){
+    $('.loader-container').fadeOut(10,function(){
         $(this).remove();
     });
 });
