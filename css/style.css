@@ -124,15 +124,15 @@ p{
     position: absolute;
     top: 0;
     z-index: 50;
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(2px);
+    /* background-color: rgb(0, 0, 0); */
+    backdrop-filter: blur(5px);
 }
 .site-nav-scroll{
     position: fixed;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
 
     /* background-color: var(--bs-dark); */
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     animation: toShow 1s linear;
 }
 @keyframes toShow{
@@ -143,11 +143,24 @@ p{
     }
 }
 .site-nav-scroll .nav-link{
-    color: var(--bs-light) !important;
+    color: #000 !important;
+}
+.site-nav .nav-link{
+    color: #000 !important;
+}
+.dark-mode .site-nav .nav-link{
+    color: #ffffff !important;
+}
+.neon-mode .site-nav .nav-link{
+    color: #ffffff !important;
 }
 .site-nav-scroll .menu-icon{
     color: #1A129F !important;
 }
+.site-logo{
+    filter: invert(1);
+}
+
 .dropb{
     position: relative;
     top: 80%;

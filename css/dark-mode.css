@@ -34,6 +34,9 @@
     background-color: yellowgreen;
     color: #000000;
 }
+.dark-mode .site-logo{
+    filter: invert(0);
+}
 .dark-mode .btn:hover{
     background: #8ab40d;
     color: #f7fff4;
